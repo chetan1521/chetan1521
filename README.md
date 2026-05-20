@@ -64,7 +64,7 @@ Autonomous browser agent that crawls 500K+ clinical trials with zero hand-writte
 ### 📚 [medrag-paper-assistant](https://github.com/chetan1521/medrag-paper-assistant)
 *LangGraph RAG agent over 10M+ PubMed abstracts · hybrid BM25 + Qdrant · Neo4j · <2s latency*
 
-Production RAG system with hybrid sparse + dense retrieval in parallel, Reciprocal Rank Fusion, local BAAI/bge cross-encoder reranking, and Neo4j AuraDB citation graph expansion. Completely free stack — Qdrant self-hosted, BAAI/bge embeddings local, NVIDIA NIM for generation.
+Production RAG system with hybrid sparse + dense retrieval in parallel, Reciprocal Rank Fusion, local BAAI/bge cross-encoder reranking, and Neo4j AuraDB citation graph expansion. Qdrant self-hosted, BAAI/bge embeddings local, NVIDIA NIM for generation.
 
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white)
@@ -75,9 +75,9 @@ Production RAG system with hybrid sparse + dense retrieval in parallel, Reciproc
 ---
 
 ### 🧬 [biomedical-slm-finetune](https://github.com/chetan1521/biomedical-slm-finetune)
-*QLoRA fine-tuning on PubMedQA + MedQA → GGUF → FastAPI · free GPU (Colab T4 / Kaggle P100)*
+*QLoRA fine-tuning on PubMedQA + MedQA → GGUF → FastAPI · GPU (Colab T4 / Kaggle P100)*
 
-End-to-end pipeline to fine-tune small LMs on open biomedical datasets using QLoRA (4-bit base loading) on free GPUs. Dataset prep from HuggingFace → LoRA training → W&B tracking → GGUF quantization via llama.cpp → OpenAI-compatible FastAPI server. Produced model powers medical-research-agent.
+End-to-end pipeline to fine-tune small LMs on open biomedical datasets using QLoRA (4-bit base loading) on GPUs. Dataset prep from HuggingFace → LoRA training → W&B tracking → GGUF quantization via llama.cpp → OpenAI-compatible FastAPI server. Produced model powers medical-research-agent.
 
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![LoRA/PEFT](https://img.shields.io/badge/LoRA%2FPEFT-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -92,7 +92,7 @@ End-to-end pipeline to fine-tune small LMs on open biomedical datasets using QLo
 | Layer | Technologies |
 |---|---|
 | **Agent Orchestration** | LangGraph · LangChain · MCP (Model Context Protocol) |
-| **LLM / AI** | NVIDIA NIM · Groq · Claude (Anthropic) · GPT-4 · Gemini · Ollama (local) |
+| **LLM / AI** | Amazon Bedrock · Vertex AI · Claude (Anthropic) · GPT-4 · Gemini · Ollama (local) · LLama |
 | **RAG & Retrieval** | Qdrant · Pinecone · BM25 · Neo4j · BAAI/bge embeddings · Cross-encoder reranking |
 | **Fine-tuning** | LoRA/PEFT · QLoRA · bitsandbytes · llama.cpp · GGUF · HuggingFace Transformers |
 | **Cloud & MLOps** | GCP / Vertex AI · Azure · AWS Bedrock · Docker · FastAPI · Redis · Weights & Biases |
@@ -125,11 +125,11 @@ End-to-end pipeline to fine-tune small LMs on open biomedical datasets using QLo
 ```
 ┌──────────────────────────────────────────────────────┐
 │                                                      │
-│   Open to:  Agentic AI · LLM Engineer · AI Systems  │
+│   Open to:  Agentic AI · LLM Engineer · AI Systems   │
 │   Remote:   ✓   |   Base: Bangalore, India          │
 │                                                      │
-│   📧  chetangowda1521@gmail.com                      │
-│   🔗  linkedin.com/in/chetan-c-1ba71123b             │
+│   📧  chetangowda1521@gmail.com                     │
+│   🔗  linkedin.com/in/chetan-c-1ba71123b            │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
